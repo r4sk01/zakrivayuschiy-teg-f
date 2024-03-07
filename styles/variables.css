@@ -5,6 +5,29 @@
     --display-text-weight-base: 400;
     --display-text-weight-accent: 700;
 
+    --background-image:
+            repeating-linear-gradient(
+                    to right,
+                    var(--color-background-stripes) 0px,
+                    var(--color-background-stripes) 2px,
+                    transparent 2px,
+                    transparent 4px),
+            repeating-linear-gradient(
+                    to bottom,
+                    var(--color-background-stripes) 0px,
+                    var(--color-background-stripes) 2px,
+                    transparent 2px,
+                    transparent 4px),
+            repeating-linear-gradient(
+                    to bottom,
+                    var(--color-background-start) 0.01%,
+                    var(--color-background-end) 100%);
+
     --color-background: #FFF;
     --color-accent: #000;
+    --color-background-stripes: #d3d3d3;
+    --color-background-start: #e7e7e7;
+    --color-background-end: #1a1a1a;
+
+    --content-max-inline-size: clamp(375px, 100vw, 700px);
 }

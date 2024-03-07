@@ -11,6 +11,9 @@
 
     --color-background: #FFF;
     --color-accent: #000;
+    --color-background-stripes: #d3d3d3;
+    --color-background-start: #e7e7e7;
+    --color-background-end: #1a1a1a;
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,6 +23,9 @@
 
         --color-background: #FFF;
         --color-accent: #000;
+        --color-background-stripes: #d3d3d3;
+        --color-background-start: #e7e7e7;
+        --color-background-end: #1a1a1a;
     }
 }
 
@@ -29,6 +35,9 @@
 
     --color-background: #000;
     --color-accent: #00CC14;
+    --color-background-stripes: #000;
+    --color-background-start: #007f0c;
+    --color-background-end: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,5 +47,8 @@
 
         --color-background: #000;
         --color-accent: #00CC14;
+        --color-background-stripes: #000;
+        --color-background-start: #007f0c;
+        --color-background-end: #004306;
     }
 }
