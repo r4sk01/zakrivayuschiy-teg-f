@@ -1,9 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --display-text-font-main: 'Inter', sans-serif;
-    --displat-text-font-accent: 'PressStart2P', monospace;
-    --display-text-weight-base: 400;
-    --display-text-weight-accent: 700;
+    /*Does Not Change*/
 
     --background-image:
             repeating-linear-gradient(
@@ -22,12 +19,31 @@
                     to bottom,
                     var(--color-background-start) 0.01%,
                     var(--color-background-end) 100%);
+    --border-line-size: 2px;
+
+    --content-max-inline-size: clamp(375px, 100vw, 700px);
+
+    --display-text-font-main: 'Inter', sans-serif;
+    --displat-text-font-accent: 'PressStart2P', monospace;
+
+    --general-text-font-size: 14px;
+    --general-text-font-size-big: 18px;
+
+    --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* 375 x 1440 */
+    --header-description-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem); /* 375 x 1440 */
+
+
+    /*Change*/
+    --display-text-weight-base: 400;
+    --display-text-weight-accent: 700;
 
     --color-background: #FFF;
     --color-accent: #000;
     --color-background-stripes: #d3d3d3;
     --color-background-start: #e7e7e7;
     --color-background-end: #1a1a1a;
+    --color-border-line: #000;
 
-    --content-max-inline-size: clamp(375px, 100vw, 700px);
+
+
 }
