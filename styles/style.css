@@ -161,8 +161,40 @@
   padding-block-end: 23px;
 }
 
-.card__buttons__like {
+.card__like-button {
   block-size: 38px;
   inline-size: 130px;
   border: var(--border-line-size) solid var(--color-border-line);
+}
+
+/* 4.0 Save Button With Floppy Disk */
+
+.content-memory{
+  margin: 54px 0 105px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-memory__save {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 15px 19px;
+  border: var(--border-line-size) solid var(--color-border-line);
+}
+
+.save-icon {
+  max-block-size: 21px;
+  max-inline-size: 21px;
+}
+
+@media screen and (width <= 375px) {
+  .content-memory__save {
+    flex-direction: column;
+  }
+
+  .save-icon {
+    max-block-size: 28px;
+    max-inline-size: 28px;
+  }
 }
