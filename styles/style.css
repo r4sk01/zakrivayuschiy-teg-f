@@ -132,6 +132,27 @@
   overflow: hidden;
 }
 
+@supports (mix-blend-mode: hard-light) {
+  .card__canvas__label {
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+  }
+}
+
+.card__canvas__label {
+  position: absolute;
+  color: currentColor;
+  user-select: none;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+  font-family: var(--displat-text-font-accent);
+  font-size: var(--general-text-font-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 var(--color-background), 1px -1px 0 var(--color-background),
+  -1px 1px 0 var(--color-background), 1px 1px 0 var(--color-background);
+}
+
 .card__canvas__image {
   display: block;
   inline-size: 100%;
@@ -189,6 +210,11 @@
 }
 
 @media screen and (width <= 375px) {
+
+  .card__canvas__label {
+    inset-inline-end: 11px;
+  }
+
   .content-memory__save {
     flex-direction: column;
   }
