@@ -12,3 +12,13 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes header-arrow {
+    0% {
+        left: var(--header-arrow-offset);
+    }
+
+    100% {
+        left: calc(var(--header-arrow-offset) + 4px);
+    }
+}
