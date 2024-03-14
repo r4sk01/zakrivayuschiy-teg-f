@@ -22,3 +22,21 @@
         left: calc(var(--header-arrow-offset) + 4px);
     }
 }
+
+@keyframes scale-heart {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes flash-sparks {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

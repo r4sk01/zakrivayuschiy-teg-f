@@ -22,6 +22,7 @@
     --border-line-size: 2px;
 
     --color-heart-sparks: #FF0000;
+    --color-heart-click: #FF0000;
 
     --content-max-inline-size: clamp(375px, 100vw, 700px);
 
