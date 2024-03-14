@@ -18,6 +18,8 @@
 
     --color-background-button-slider: #000;
     --color-text-button-slider: #FFF;
+
+    --color-heart-contour: #000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,6 +36,8 @@
 
         --color-background-button-slider: #000;
         --color-text-button-slider: #FFF;
+
+        --color-heart-contour: #000;
     }
 }
 
@@ -50,6 +54,8 @@
 
     --color-background-button-slider: #00CC14;
     --color-text-button-slider: #00CC14;
+
+    --color-heart-contour: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,5 +72,7 @@
 
         --color-background-button-slider: #00CC14;
         --color-text-button-slider: #00CC14;
+
+        --color-heart-contour: #00CC14;
     }
 }

@@ -308,3 +308,11 @@
   outline: var(--border-line-size) solid var(--color-border-line);
   outline-offset: -3px;
 }
+
+/* 6.0 Like/Heart Button */
+
+/* 6.1 Defaults */
+
+.like-icon .sparks {
+  opacity: 0;
+}

@@ -21,6 +21,8 @@
                     var(--color-background-end) 100%);
     --border-line-size: 2px;
 
+    --color-heart-sparks: #FF0000;
+
     --content-max-inline-size: clamp(375px, 100vw, 700px);
 
     --display-text-font-main: 'Inter', sans-serif;
@@ -49,6 +51,6 @@
     --color-background-button-slider: #000;
     --color-text-button-slider: #FFF;
 
-
+    --color-heart-contour: #000;
 
 }
