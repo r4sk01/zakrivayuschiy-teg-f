@@ -311,8 +311,26 @@
 
 /* 6.0 Like/Heart Button */
 
-/* 6.1 Defaults */
+/* 6.1 Hover */
 
 .like-icon .sparks {
   opacity: 0;
+}
+
+/* Подгонял значения, чтобы анимация на вид соответствовала требованию */
+
+.like-icon .main-body {
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon .core {
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--color-accent);
+}
+
+.like-icon:hover .core {
+  fill: var(--color-accent);
 }
