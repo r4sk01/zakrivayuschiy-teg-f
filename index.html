@@ -108,14 +108,30 @@
         </li>
       </ul>
       <div class="content-memory">
-        <button class="button content-memory__save button-slider">
+        <button class="button content-memory__save button-slider" type="button"
+        onclick="window['dialog-floppy'].showModal()"
+        aria-controls="dialog-floppy">
           <svg class="save-icon">
             <use href="./images/floppy.svg#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
-
       </div>
+      <dialog class="dialog-floppy" id="dialog-floppy">
+        <div class="dialog-floppy__content">
+          <svg class="dialog-floppy__icon">
+            <use href="./images/floppy.svg#floppy"></use>
+          </svg>
+          <h3 class="dialog-floppy__title">
+            Вставьте дискету, чтобы продолжить
+          </h3>
+        </div>
+        <form method="dialog">
+          <button class="button button-slider dialog-floppy__button" type="submit">
+            <span class="button__text">Ок</span>
+          </button>
+        </form>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

@@ -365,3 +365,56 @@
 .like-icon.is-liked .sparks {
   animation: flash-sparks 0.3s 0.3s ease-in 2 alternate;
 }
+
+/* 7.0 Dialog */
+
+.dialog-floppy {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  padding: 30px 40px;
+  inline-size: 91%;
+  max-inline-size: 357px;
+  background-color: var(--color-background);
+  color: var(--color-accent);
+  border: var(--border-line-size) solid var(--color-border-line);
+}
+
+.dialog-floppy[open]{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog-floppy::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog-floppy__content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-floppy__title {
+  font-family: var(--displat-text-font-accent);
+  font-size: var(--general-text-font-size);
+  font-style: normal;
+  font-weight: var(--display-text-weight-base);
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.dialog-floppy__icon {
+  inline-size: 39px;
+  block-size: 39px;
+  flex-shrink: 0;
+}
+
+.dialog-floppy__button {
+  inline-size: 100%;
+  block-size: 38px;
+  text-transform: uppercase;
+  border: var(--border-line-size) solid var(--color-border-line);
+}
