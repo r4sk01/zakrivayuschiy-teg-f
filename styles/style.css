@@ -418,3 +418,37 @@
   text-transform: uppercase;
   border: var(--border-line-size) solid var(--color-border-line);
 }
+
+/* 8.0 Filters */
+
+.beginning-image {
+  filter: sepia(50%) brightness(50%);
+}
+
+.fear-image {
+  filter: contrast(90%);
+}
+
+.process-image {
+  filter: blur(0.1rem);
+}
+
+.conflict-image {
+  filter: opacity(0.9);
+}
+
+.anxiety-image {
+  filter: grayscale(0.8);
+}
+
+.success-image {
+  filter: saturate(150%);
+}
+
+.dedication-image {
+  filter: hue-rotate(-45deg);
+}
+
+.path-image {
+  filter: invert(0.2);
+}
