@@ -173,15 +173,18 @@
   overflow: hidden;
 }
 
-@supports (mix-blend-mode: hard-light) {
+@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
   .card__canvas__label {
-    opacity: 0.5;
-    mix-blend-mode: hard-light;
+    -webkit-text-stroke: 1px var(--color-background);
+    text-stroke: 1px var(--color-background);
+    text-shadow: none;
   }
 }
 
 .card__canvas__label {
   position: absolute;
+  content: '';
+  z-index: 1;
   color: currentColor;
   user-select: none;
   inset-block-start: 25px;
@@ -192,6 +195,8 @@
   text-transform: uppercase;
   text-shadow: -1px -1px 0 var(--color-background), 1px -1px 0 var(--color-background),
   -1px 1px 0 var(--color-background), 1px 1px 0 var(--color-background);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
 }
 
 .card__canvas__image {
@@ -231,7 +236,7 @@
 
 /* 4.0 Save Button With Floppy Disk */
 
-.content-memory{
+.content-memory {
   margin: 54px 0 105px;
   display: flex;
   justify-content: center;
@@ -380,7 +385,7 @@
   border: var(--border-line-size) solid var(--color-border-line);
 }
 
-.dialog-floppy[open]{
+.dialog-floppy[open] {
   display: flex;
   flex-direction: column;
   gap: 30px;
