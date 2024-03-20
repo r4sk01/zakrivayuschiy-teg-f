@@ -54,7 +54,7 @@
 .button__text {
   font-family: var(--displat-text-font-accent);
   font-size: var(--general-text-font-size);
-  font-variation-settings: 'wght' var(--display-text-weight-base);
+  font-weight: var(--display-text-weight-base);
   line-height: 90%;
 }
 
