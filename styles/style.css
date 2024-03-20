@@ -282,6 +282,7 @@
 .button-slider {
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
 .button-slider:focus-visible {
