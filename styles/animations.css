@@ -49,6 +49,11 @@
     opacity: 0;
 }
 
+.like-icon .contour {
+    fill: var(--color-accent);
+    transition: fill 0.1s linear;
+}
+
 .like-icon .main-body {
     fill: transparent;
     transition: fill 0.3s linear;
