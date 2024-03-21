@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .root {
+    :root {
         --display-text-weight-base: 400;
         --display-text-weight-accent: 700;
 
@@ -59,7 +59,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .root {
+    :root {
         --display-text-weight-base: 465;
         --display-text-weight-accent: 785;
 

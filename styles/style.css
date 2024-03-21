@@ -272,18 +272,6 @@
 
 @media screen and (width <= 375px) {
 
-  /*.card__title {*/
-  /*  padding-block: 3.5px 5.5px;*/
-  /*}*/
-
-  /*.card__canvas__label {*/
-  /*  inset-inline-end: 11px;*/
-  /*}*/
-
-  /*.card__canvas__image {*/
-  /*  max-block-size: 375px;*/
-  /*}*/
-
   .content-memory__save {
     flex-direction: column;
   }
